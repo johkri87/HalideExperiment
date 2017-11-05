@@ -15,4 +15,6 @@ These were the challenges I met:
   * Clang/LLVM
   * gcc
   
-What ultimately worked out was to download the source files and build Halide myself.
+What ultimately worked out was to download the source files and build Halide. I had a newer version of gcc/g++ than the binaries was built for (my system runs gcc 5.4, but the hightest version for the binaries are 5.3). 
+
+On my system I also use the Anaconda (version 4.3) Python distribution, which comes with a large amount of pre-installed packages. Among these packages are the libjpeg and libpng. When Anaconda is installed you are given the choice to append it into your PATH, which I did, which caused my system to use the Anaconda packages by default. Anaconda used non-dev versions of libpng and libjpeg, and a lower version than was required for Halide which prohibited compilation of any programs using image IO.
