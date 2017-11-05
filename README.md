@@ -22,3 +22,8 @@ On my system I also use the Anaconda (version 4.3) Python distribution, which co
 For Clang/LLVM, I tried using version 5.0.0, which turned out to not work. It seems like they have restructured the compiler, causing Halide's linking of some libraries to be wrong. I later went for the safest bet and used version 3.9.1 instead, which worked well.
 
 What ultimately worked out was to download the source files and build Halide. I had a newer version of gcc/g++ than the binaries was built for (my system runs gcc 5.4, but the hightest version for the binaries are 5.3). 
+
+## Ease of programming
+Halide represents images as functions f(x,y) for grayscale or f(x,y,c) for color images.
+
+## Results
