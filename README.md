@@ -25,7 +25,7 @@ For Clang/LLVM, I first tried version 5.0.0, which turned out to not work. It se
 I had a newer version of gcc/g++ than the binaries was built for (my system runs gcc 5.4, but the hightest version for the binaries are 5.3).
 
 ### Setup summary
-What ultimately worked out was to download the source files and build Halide.
+What ultimately worked out was to download the source files and build Halide, and remove Anaconda from PATH.
 
 ## Ease of programming
 Halide represents images as functions f(x,y) for grayscale or f(x,y,c) for color images.
